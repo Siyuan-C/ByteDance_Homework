@@ -1,0 +1,48 @@
+01、
+按顺序打印出App、ViewController生命周期的各个事件
+
+App:
+	Not running
+	Inactive
+	Active
+	Backgroud
+	Suspended
+
+ViewController:
+	alloc/init
+	loadView
+	viewDidLoad
+	viewWillAppear
+	viewDidAppear
+	viewWillDisappear
+	viewDidDisappear
+	dealloc
+
+02、
+五种常用的UI控件
+
+UIScrollView——缩放控件
+UITableView——表格控件
+UICollectionView——宫格布局控件
+UIWebView——网页显示控件
+WKWebView——网页显示控件
+
+03、
+三个声明UITableViewDelegate的方法
+
+(1)选中某行cell调用
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+(2)自定义每组头部的view需要使用UITableViewHeaderFooterView
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section; 
+
+(3)自定义每组尾部的view
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
+
+
+
+
+	
+
