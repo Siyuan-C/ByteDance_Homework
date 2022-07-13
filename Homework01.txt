@@ -39,6 +39,7 @@ WKWebView——网页显示控件
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section; 
 
 (3)自定义每组尾部的view
+
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
 
 
