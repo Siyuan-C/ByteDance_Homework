@@ -1,0 +1,38 @@
+//Student.h
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface Student : NSObject
+{
+    NSString *name;
+    NSString *major;
+    NSInteger age;
+}
+
+- (void)study:(float)time;
+
+@end
+
+NS_ASSUME_NONNULL_END
+
+
+//Student.m
+
+#import "Student.h"
+
+@implementation Student
+
+
+- (void)study:(float)time
+{
+    NSLog(@"Name: %@\n", name);
+    NSLog(@"Major: %@\n", major);
+    NSLog(@"Age: %ld\n", age);
+    NSLog(@"Studied %f hours.\n", time);
+}
+
+@end
+
+
